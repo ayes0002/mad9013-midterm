@@ -210,6 +210,7 @@ p{
     .side{
         float:left;
         width: 25%;
+        padding-bottom: 1rem;
     }
     
     .primary p{
@@ -227,5 +228,6 @@ p{
     .footer{
         clear:both;
         max-width: 1600px;
+        padding-bottom: 1rem;
     }
 }
