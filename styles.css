@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+html{
+  font-size: 16px;
+  line-height:1.75;
+  font-family: 'Oswald', Helvetica, Calibri, sans-serif;
+}
+/* -- Layout -- */
+.wrapper{
+  width:100%;
+  margin:0 auto;
+  background-color: #8FFF7F;
+}
+
+.footer{
+  text-align: center;
+}
+
+.clearfix:after{
+  clear:both;
+  display:block;
+  content: '.';
+  visibility:hidden;
+  height:0;
+  line-height:0;
+}
+
+
+/* -- Navigation -- */
+.mainnav ul{
+  list-style:none;
+}
+
+.mainnav a,
+.mainnav a:visited{
+  text-decoration:none;
+  display:block;
+  font-size: 1.5rem;
+  background-color: #017F00;
+  color:#EEE;
+  text-align:center;
+}
+.mainnav a:hover,
+.mainnav a:active{
+  background-color: #EEE;
+  color:#333;
+}
+/* -- Content -- */
+.masthead h1{
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background: #ddd url("http://lorempixel.com/600/400/cats/") no-repeat 50% 50%;
+  color: #EEE;
+  text-shadow: 2px 2px 4px #000;
+  padding: 1.5rem;
+  text-align: center;
+  /* -- make the 2rem padding standard --*/
+}
+
+h2 {
+  padding: 1.5rem 1rem 1rem;
+  font-size: 2rem;
+  line-height: 1.6rem;
+  text-align: left;
+}
+
+
+.primary h3{
+  padding: 1rem 1rem;
+  font-size: 1.75rem;
+  line-height: 1.6rem;
+  text-align: left;
+}
+
+.side h3{
+  padding: 1.5rem 1rem 1rem;
+  font-size: 1.75rem;
+  line-height: 1.6rem;
+  text-align: left;
+}
+
+img{
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    float: left;
+    height: auto;
+    width: 100%;
+}
+p{
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+.footer{
+  padding: 1rem 0rem 0rem;
+  background-color: black;
+  color: #999;
+}
+
+.footer p{
+    font-size: 0.9rem;
+}
+
+@media all and (min-width:35em) and (max-width:60em){
+    
+    .wrapper {
+        margin: auto;   
+    }
+    
+    .masthead h1{
+        font-size: 2.5rem;
+        line-height: 2.8;
+        background: #ddd url("http://lorempixel.com/600/400/cats/") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    
+    .mainnav a,
+    .mainnav a:visited{
+        float: left;
+        display:block;
+        width: 25%;
+        text-decoration:none;
+        font-size: 1rem;
+        text-align:center;
+        font-weight: bold;
+        line-height: 3rem;
+    }
+    
+    .primary img {
+        margin-top: 0.25rem;
+        float: right;
+        height: auto;
+        width: 50%;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+    }
+        
+    .side img{
+        margin-bottom: 1rem;
+        margin-top: 0.25rem;
+        
+    }
+    
+    .mainnav a:hover,
+    .mainnav a:active{
+        background-color: #EEE;
+        color:#333;
+    }
+    
+    
+    .primary{
+        width:63%;
+        float: left;
+        text-align: justify;
+    }
+  
+    .side{
+        float: right;
+        width:37%;
+    }
+    
+    .side h3{
+        font-size: 1.13rem
+    }
+    
+    .side p{
+        font-size: 0.86rem
+    }
+        
+    .footer{
+        clear: both;
+    }
+}
+
+@media all and (min-width: 60em){
+    
+    
+    .masthead h1{
+        font-size: 3.5rem;
+        background: #8FFF7F;
+    }
+  
+    .wrapper{
+        max-width: 1600px;
+    }
+    
+    .mainnav{
+        float: left;
+        width:25%;
+        padding-right: 1rem;
+    }
+    
+    .mainnav a,
+    mainnav a:visited{
+        float: left;
+        width: 100%;
+    }
+  
+    .primary{
+        float: left;
+        -webkit-column-count: 2;
+        width:50%;
+    }
+    
+    
+    .side{
+        float:left;
+        width: 25%;
+    }
+    
+    .primary p{
+        padding: 0rem 0.5rem;
+    }
+    
+    img{
+        position: absolute;
+        top: 18em;
+        left: 0px;
+        width: 25%;
+        padding-right: 1rem;
+    }
+    
+    .footer{
+        clear:both;
+        max-width: 1600px;
+    }
+}
